@@ -110,7 +110,7 @@ function  ajaxFunction(){
 function post_login()
 {
 	var request = ajaxFunction();
-	request.open( "POST", "/hoj/Login", true );
+	request.open( "POST", "Login", true );
 	request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	var username = document.getElementById("login_name").value;
     var passwd = document.getElementById("passwd0").value;
@@ -141,7 +141,7 @@ function post_login()
 function post_register()
 {
 	var request = ajaxFunction();
-	request.open( "POST", "/hoj/Register", true );
+	request.open( "POST", "Register", true );
 	request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	var username = document.getElementById("sign_name").value;
     var passwd = document.getElementById("passwd1").value;
@@ -168,3 +168,6 @@ function post_register()
     request.send("user_id="+username+"&password="+passwd+"&nick="+nick+"&email="+email+"&school="+school);
     
 }
+
+
+

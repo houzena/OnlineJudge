@@ -33,6 +33,8 @@ public class Login extends HttpServlet {
 				}
 				else
 				{
+					HttpSession session = request.getSession();
+					session.setAttribute("user_id", request.getParameter("user_id"));
 					response.getWriter().println("true");
 					
 				}

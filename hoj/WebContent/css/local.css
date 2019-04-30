@@ -30,3 +30,21 @@
     border-color: black;
     border-image: initial;
 }
+.page_content{
+    border-top:1px solid;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Times New Roman;
+}
+pre {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #555;
+    border: 1px solid #dedede;
+    border-radius: 0;
+}
+
